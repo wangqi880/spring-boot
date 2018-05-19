@@ -17,5 +17,12 @@ spring:
     encoding: UTF-8
     content-type: text/html
     cache: false
+  data:
+    mongodb:
+      connections-per-host: 22
+      min-connections-per-host: 12
+      database: test
+      port: 17017
+      host: 10.25.245.121
 #cron:
 #  pattern: 0/15 * * * * ?
