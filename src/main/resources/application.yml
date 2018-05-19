@@ -24,5 +24,21 @@ spring:
       database: test
       port: 17017
       host: 10.25.245.121
+  rabbitmq:
+      host: 10.25.245.121
+      port: 8088
+      username: guest
+      password: guest
+      virtual-host: /wq
+      listener:
+        simple:
+          concurrency: 30
+          max-concurrency: 100
+          retry:
+            initial-interval: 2000
+            enabled: true
+            max-interval: 50000
+            max-attempts: 10
+
 #cron:
 #  pattern: 0/15 * * * * ?
