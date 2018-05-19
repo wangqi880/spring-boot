@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="alternate icon" type="/amazeui/i/126.jpg" href="/amazeui/i/126.jpg">
+		<link rel="stylesheet" href="/amazeui/css/amazeui.css" />
+		<style>
+			.am-topbar {
+				min-height: 60px;
+				background: #fff;
+			}
+			
+			.am-container {
+				max-width: 1200px;
+			}
+			
+			.logo {
+				height: 60px;
+				line-height: 60px;
+				float: left;
+			}
+			
+			.logo a {
+				height: 28px;
+			}
+			
+			.logo a img {
+				width: 150px;
+				height: 28px;
+				vertical-align: middle;
+			}
+			
+			.am-nav-pills>li {
+				width: 80px;
+				font-size: 18px;
+				height: 60px;
+				text-align: center;
+			}
+			
+			.am-nav-pills>li>a:hover {
+				color: red;
+			}
+			
+			.am-topbar-nav>li>a:after {
+				border-bottom: none;
+			}
+			
+			.am-nav-pills>li>a {
+				line-height: 60px;
+			}
+			
+			.am-container-1 {
+				width: 1120px;
+				margin: 0 auto;
+			}
+			
+			.content {
+				width: 100%;
+				margin-top: 40px;
+			}
+			
+			.title {
+				text-align: center;
+				position: relative;
+			}
+			
+			.title-i {
+				font-size: 36px;
+				vertical-align: sub;
+				margin-right: 5px;
+			}
+			
+			.title-span {
+				font-size: 26px;
+				color: #000;
+			}
+			
+			.title p {
+				font-size: 16px;
+				color: #999;
+				margin-top: -5px;
+			}
+			
+			.par-cont {
+				text-align: center;
+				width: 100%;
+				margin-bottom: 40px;
+			}
+			
+			ul li {
+				list-style: none;
+			}
+			
+			.am-footer-default {
+				background-color: #fff;
+			}
+			
+			.cut {
+				width: 100%;
+				height: 620px;
+				position: relative;
+				clear: both;
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-color: #f7f7f7;
+				z-index: 100;
+			}
+			
+			.cut-log {
+				height: 450px;
+				width: 300px;
+				background-image: url(/amazeui/i/thumb_499_350_20160222103913372.jpg);
+				position: absolute;
+				top: 80px;
+				right: 370px;
+			}
+			
+			.log-inp {
+				margin-top: 100px;
+			}
+			
+			.log-inp input {
+				text-indent: 10px;
+				width: 250px;
+				height: 45px;
+				margin-left: 25px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				border: solid #757575 1px;
+				border-radius: 5px;
+				font-size: 14px;
+			}
+			
+			.log-inp button {
+				width: 110px;
+				margin-left: 25px;
+				margin-top: 10px;
+			}
+			
+			.error {
+				color: red;
+				margin-left: 25px;
+				display: none;
+			}
+			p{
+				margin: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="am-topbar-fixed-top am-topbar">
+			<div class="am-container">
+				<div class="am-topbar-brand logo">
+					<a href="#">
+						<img src="/amazeui/i/logo.png" />
+					</a>
+				</div>
+				<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm  am-show-sm-only am-collapsed" data-am-collapse="{target:'#doc-topbar-collapse'}">
+					<span class="am-sr-only">导航切换</span>
+					<span class="am-icon-bars"></span>
+				</button>
+				<div class="am-topbar-collapse am-fr am-collapse" id="doc-topbar-collapse" style="height: 0;">
+					<ul class="am-nav am-nav-pills am-topbar-nav">
+						<li>
+							<a href="index.html" style="color: red;">首页</a>
+						</li>
+						<li>
+							<a href="index2.html">展示</a>
+						</li>
+						<li>
+							<a href="index4.html">资讯</a>
+						</li>
+					</ul>
+					<a href="login.html" class="am-btn am-btn-default" style="margin-top: 10px;margin-left: 20px;background-color: #999">登录</a>
+					<a href="zhuce.html" class="am-btn am-btn-default" style="margin-top: 10px;margin-left: 5px;">注册</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="cut" style="background-image: url(/amazeui/i/promPic.jpg);">
+			<div class="cut-log">
+				<form action="#" class="log-inp">
+					<p>
+						<input type="text" name="username" placeholder="邮箱帐号或者手机号">
+						<span class="error">邮箱格式不正确！</span>
+					</p>
+					<P>
+						<input type="password" name="password" placeholder="密码">
+						<span class="error">密码至少8位！</span>
+					</P>
+					<button type="button" class="am-btn am-btn-primary am-radius">登录</button>
+					<button type="button" class="am-btn am-btn-default am-radius">注册</button>
+				</form>
+
+			</div>
+		</div>
+
+		<!--回到顶部-->
+		<div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+			<a href="#top" title="">
+				<i class="am-gotop-icon am-icon-hand-o-up"></i>
+			</a>
+		</div>
+		<footer data-am-widget="footer" class="am-footer am-footer-default" data-am-footer="{  }">
+			<div class="am-footer-switch">
+				<span class="am-footer-ysp" data-rel="mobile" data-am-modal="{target: '#am-switch-mode'}">
+          云适配版
+    </span>
+				<span class="am-footer-divider"> | </span>
+				<a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="javascript:">
+					电脑版
+				</a>
+			</div>
+			<div class="am-footer-miscs ">
+
+				<p>由
+					<a href="#" target="_blank" class="">汤汤工作室</a>
+					提供技术支持</p>
+				<p>CopyRight©2014 AllMobilize Inc.</p>
+				<p>京ICP备13033158</p>
+			</div>
+		</footer>
+
+		<div id="am-footer-modal" class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd am-modal-footer-hd">
+					<a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin " data-am-modal-close>&times;</a>
+				</div>
+				<div class="am-modal-bd">
+					您正在浏览的是
+
+					<span class="am-switch-mode-owner">
+            云适配
+        </span>
+
+					<span class="am-switch-mode-slogan">
+              为您当前手机订制的移动网站。
+        </span>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<script src="/amazeui/js/jquery.js"></script>
+	<!--<![endif]-->
+	<script src="/amazeui/js/amazeui.min.js"></script>
+	<script>
+		$('input[name=username]').blur(function() {
+			val = this.value;
+			if(!val.match(/^\w+@\w+\.\w+$/i)) {
+				$(this).next().show();
+			} else {
+				$(this).next().hide();
+			}
+		})
+		$('input[name=password]').blur(function() {
+			val = this.value;
+			if(val.length < 8) {
+				$(this).next().show();
+			} else {
+				$(this).next().hide();
+			}
+		})
+	</script>
+
+</html>

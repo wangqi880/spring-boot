@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+<property name="DEV_HOME" value="." />
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--记录错误日志以及错误详情-->
+    <appender name="all_error"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>./logs/mylog_all_error.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 每天一归档 -->
+            <fileNamePattern>./logs/mylog_all_error.%d{yyyyMMdd}.%i.log</fileNamePattern>
+            <!-- 单个日志文件最多 100MB, 30天的日志周期，最大不能超过3GB -->
+            <maxFileSize>500MB</maxFileSize>
+            <maxHistory>12</maxHistory>
+            <totalSizeCap>6GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>%d %p %logger{0} ||%X{logId} ||%m||%replace(%ex){'[\r\n]+', '\\n'}%nopex%n</Pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+
+    <!--记录其他所有日志-->
+    <appender name="all_info"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>./logs/mylog_all_info.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 每天一归档 -->
+            <fileNamePattern>./logs/mylog_all_info.%d{yyyyMMdd}.%i.log</fileNamePattern>
+            <!-- 单个日志文件最多 100MB, 30天的日志周期，最大不能超过3GB -->
+            <maxFileSize>500MB</maxFileSize>
+            <maxHistory>12</maxHistory>
+            <totalSizeCap>6GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>%d %p %logger{0} ||%X{logId} ||%m%n %nopex</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.j.controller.IndexController"
+            level="DEBUG" additivity="false">
+        <appender-ref ref="all_info"/>
+        <appender-ref ref="all_error"/>
+    </logger>
+
+    <root level="INFO">
+    <appender-ref ref="all_info" />
+    <appender-ref ref="all_error" />
+    </root>
+
+</configuration>

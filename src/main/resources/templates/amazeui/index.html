@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>汤汤</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="alternate icon" type="/amazeui/i/126.jpg" href="/amazeui/i/126.jpg">
+		<link rel="stylesheet" href="/amazeui/css/amazeui.css" />
+		<style>
+			.am-topbar {
+				min-height: 60px;
+				background: #fff;
+			}
+			
+			.am-container {
+				max-width: 1200px;
+			}
+			
+			.logo {
+				height: 60px;
+				line-height: 60px;
+				float: left;
+			}
+			
+			.logo a {
+				height: 28px;
+			}
+			
+			.logo a img {
+				width: 150px;
+				height: 28px;
+				vertical-align: middle;
+			}
+			
+			.am-nav-pills>li {
+				width: 80px;
+				font-size: 18px;
+				height: 60px;
+				text-align: center;
+			}
+			
+			.am-nav-pills>li>a:hover {
+				color: red;
+			}
+			
+			.am-topbar-nav>li>a:after {
+				border-bottom: none;
+			}
+			
+			.am-nav-pills>li>a {
+				line-height: 60px;
+			}
+			
+			.am-container-1 {
+				width: 1120px;
+				margin: 0 auto;
+			}
+			
+			.content {
+				width: 100%;
+				margin-top: 40px;
+			}
+			
+			.title {
+				text-align: center;
+				position: relative;
+			}
+			
+			.title-i {
+				font-size: 36px;
+				vertical-align: sub;
+				margin-right: 5px;
+			}
+			
+			.title-span {
+				font-size: 26px;
+				color: #000;
+			}
+			
+			.title p {
+				font-size: 16px;
+				color: #999;
+				margin-top: -5px;
+			}
+			
+			.par-cont {
+				text-align: center;
+				width: 100%;
+				margin-bottom: 40px;
+			}
+			
+			ul li {
+				list-style: none;
+			}
+			
+			.shiliang {
+				font-size: 64px;
+				width: 170px;
+				height: 170px;
+				background: #0071b8;
+				line-height: 140px;
+				color: #fff;
+				-webkit-transition: -webkit-transform 0.4s ease-out;
+				border: solid 15px #fcfcfc;
+			}
+			
+			.txt {
+				display: block;
+				margin-top: 10px;
+			}
+			
+			.tet {
+				font-size: 12px;
+				margin-top: 5px;
+			}
+			
+			.shiliang:hover {
+				background-color: #0071b8;
+				transform: rotate(360deg);
+				border: solid 15px #c9dfec;
+			}
+			
+			.anli {
+				background-color: #f0eeed;
+			}
+			
+			.anli-all {
+				width: 100%;
+				padding: 30px 0 30px 0;
+			}
+			
+			.anli-title {
+				text-align: center;
+			}
+			
+			.jieshao {
+				background-color: #fff;
+				width: 100%;
+			}
+			
+			.case-item {
+				position: relative;
+				width: 300px;
+				height: 300px;
+				margin: 0 auto;
+			}
+			
+			.case-img {
+				position: relative;
+				width: 300px;
+				height: 300px;
+				max-width: 100%;
+			}
+			
+			.case-word {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+				-webkit-backface-visibility: hidden;
+				/* 隐藏旋转元素的背面*/
+				backface-visibility: hidden;
+				background: rgba(0, 0, 0, 0.6);
+				/*后面这个0.6是指的背景的透明度*/
+				opacity: 0;
+				-webkit-transition: all 0.35s ease-in-out;
+				/*规定提示信息怎样出现ease-in-out以慢速度开始和结束*/
+				-moz-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+				color: #fff;
+			}
+			
+			.case-item a:hover .case-word {
+				opacity: 1;
+			}
+			
+			.am-gallery-bordered .am-gallery-item img {
+				width: 100%;
+				height: 290px;
+			}
+			
+			.case-text {
+				margin-top: 100px;
+			}
+			
+			.am-footer-default {
+				background-color: #f0eeed;
+			}
+			
+			.txt-jieshao {
+				text-align: center;
+				padding-top: 60px;
+				padding-bottom: 20px;
+			}
+			
+			*+h1,
+			*+h2,
+			*+h3,
+			*+h4,
+			*+h5,
+			*+h6 {
+				margin-top: 1em;
+			}
+			
+			.main {
+				text-align: center;
+				padding-bottom: 60px;
+			}
+			
+			.main p {
+				margin-top: 5px;
+				margin-bottom: 0;
+				color: #666;
+				font-size: 14px;
+			}
+			
+			.am-gallery-bordered>li {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="am-topbar-fixed-top am-topbar">
+			<div class="am-container">
+				<div class="am-topbar-brand logo">
+					<a href="#">
+						<img src="/amazeui/i/logo.png" />
+					</a>
+				</div>
+				<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm  am-show-sm-only am-collapsed" data-am-collapse="{target:'#doc-topbar-collapse'}">
+					<span class="am-sr-only">导航切换</span>
+					<span class="am-icon-bars"></span>
+				</button>
+				<div class="am-topbar-collapse am-fr am-collapse" id="doc-topbar-collapse" style="height: 0;">
+					<ul class="am-nav am-nav-pills am-topbar-nav">
+						<li>
+							<a href="index.html" style="color: red;">首页</a>
+						</li>
+						<li>
+							<a href="index2.html">展示</a>
+						</li>
+						<li>
+							<a href="index4.html">资讯</a>
+						</li>
+					</ul>
+				          <a href="login.html" class="am-btn am-btn-default"style="margin-top: 10px;margin-left: 20px;">登录</a>
+				         <a href="zhuce.html" class="am-btn am-btn-default" style="margin-top: 10px;margin-left: 5px;">注册</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+			<ul class="am-slides">
+				<li><img src="/amazeui/i/2.jpg" </li>
+					<li><img src="/amazeui/i/1.jpg" </li>
+						<li><img src="/amazeui/i/2.jpg" </li>
+			</ul>
+		</div>
+		<div class="am-container-1">
+			<div class="content">
+				<div class="title">
+					<a href="#">
+						<i class="am-icon-lightbulb-o title-i"></i>
+						<span class="title-span">解决方案</span>
+						<p>Solution</p>
+					</a>
+				</div>
+				<ul class="am-g par-cont">
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-hacker-news shiliang"></i>
+						<span class="txt">网站、移动网站</span>
+						<p class="tet">微信公众号页面开发微信公众号开发</p>
+					</li>
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-hacker-news shiliang"></i>
+						<span class="txt">网站、移动网站</span>
+						<p class="tet">微信公众号页面开发微信公众号开发</p>
+					</li>
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-hacker-news shiliang"></i>
+						<span class="txt">网站、移动网站</span>
+						<p class="tet">微信公众号页面开发微信公众号开发</p>
+					</li>
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-hacker-news shiliang"></i>
+						<span class="txt">网站、移动网站</span>
+						<p class="tet">微信公众号页面开发微信公众号开发</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="anli">
+			<div class="anli-all">
+				<div class="title">
+					<a href="#">
+						<i class=" am-icon-briefcase title-i"></i>
+						<span class="title-span">客户方案</span>
+						<p>Customer Case</p>
+					</a>
+				</div>
+				<ul data-am-widget="gallery" class="am-avg-sm-1   am-avg-md-4 am-avg-lg-4 am-gallery-bordered customer-case-content am-no-layout">
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+						<div class="am-gallery-item case-item">
+							<a href="#">
+								<div class="case-img">
+									<img src="/amazeui/i/app3.png" />
+								</div>
+								<div class="case-word">
+									<div class="case-text">
+										<h3>响应式商城</h3>
+										<p>2017-06-07</p>
+										<span>
+										<i class="am-icon-eye">
+											查看更多
+										</i>
+									</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--介绍-->
+		<div class="jieshao">
+			<div class="am-u-sm-10 am-u-md-8 am-u-lg-6 am-u-sm-centered txt-jieshao">
+				<h2 style="color: #666;">我们的_服务</h2>
+				<h1 style="color: #666;">用策略的思维和艺术的审美为您</h1>
+				<h2 style="color: #666;">提供一站式整合服务</h2>
+			</div>
+			<div class="am-g doc-am-g main">
+				<div class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+					<img src="/amazeui/i/icol01.png" />
+					<p>SUPPORT</p>
+					<p>视觉_创意无界限</p>
+					<p>品牌视觉</p>
+					<p>品牌符号设计</p>
+					<p>品牌VI系统建设(升级)</p>
+					<p>品牌宣传画册 </p>
+					<p>品牌空间设计 </p>
+					<p>品牌导向标识 </p>
+					<p>品牌包装设计</p>
+					<p>品牌官网（微官网）</p>
+					<p>品牌影视/微电影</p>
+					<p>品牌平面拍摄</p>
+				</div>
+				<div class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+					<img src="/amazeui/i/icol02.png" />
+					<p>OBSERVE</p>
+					<p>视觉_创意无界限</p>
+					<p>品牌视觉</p>
+					<p>品牌符号设计</p>
+					<p>品牌VI系统建设(升级)</p>
+					<p>品牌宣传画册 </p>
+					<p>品牌空间设计 </p>
+					<p>品牌导向标识 </p>
+					<p>品牌包装设计</p>
+					<p>品牌官网（微官网）</p>
+					<p>品牌影视/微电影</p>
+					<p>品牌平面拍摄</p>
+				</div>
+				<div class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+					<img src="/amazeui/i/icol03.png" />
+					<p>CREATIVE</p>
+					<p>视觉_创意无界限</p>
+					<p>品牌视觉</p>
+					<p>品牌符号设计</p>
+					<p>品牌VI系统建设(升级)</p>
+					<p>品牌宣传画册 </p>
+					<p>品牌空间设计 </p>
+					<p>品牌导向标识 </p>
+					<p>品牌包装设计</p>
+					<p>品牌官网（微官网）</p>
+					<p>品牌影视/微电影</p>
+					<p>品牌平面拍摄</p>
+				</div>
+				<div class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+					<img src="/amazeui/i/icol04.png" />
+					<p>SPEED</p>
+					<p>视觉_创意无界限</p>
+					<p>品牌视觉</p>
+					<p>品牌符号设计</p>
+					<p>品牌VI系统建设(升级)</p>
+					<p>品牌宣传画册 </p>
+					<p>品牌空间设计 </p>
+					<p>品牌导向标识 </p>
+					<p>品牌包装设计</p>
+					<p>品牌官网（微官网）</p>
+					<p>品牌影视/微电影</p>
+					<p>品牌平面拍摄</p>
+				</div>
+			</div>
+		</div>
+
+		<!--回到顶部-->
+		<div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+			<a href="#top" title="">
+				<i class="am-gotop-icon am-icon-hand-o-up"></i>
+			</a>
+		</div>
+		<footer data-am-widget="footer" class="am-footer am-footer-default" data-am-footer="{  }">
+			<div class="am-footer-switch">
+				<span class="am-footer-ysp" data-rel="mobile" data-am-modal="{target: '#am-switch-mode'}">
+          云适配版
+    </span>
+				<span class="am-footer-divider"> | </span>
+				<a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="javascript:">
+					电脑版
+				</a>
+			</div>
+			<div class="am-footer-miscs ">
+
+				<p>由
+					<a href="#" target="_blank" class="">汤汤工作室</a>
+					提供技术支持</p>
+				<p>CopyRight©2014 AllMobilize Inc.</p>
+				<p>京ICP备13033158</p>
+			</div>
+		</footer>
+
+		<div id="am-footer-modal" class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd am-modal-footer-hd">
+					<a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin " data-am-modal-close>&times;</a>
+				</div>
+				<div class="am-modal-bd">
+					您正在浏览的是
+
+					<span class="am-switch-mode-owner">
+            云适配
+        </span>
+
+					<span class="am-switch-mode-slogan">
+              为您当前手机订制的移动网站。
+        </span>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<script src="/amazeui/js/jquery.js"></script>
+	<!--<![endif]-->
+	<script src="/amazeui/js/amazeui.min.js"></script>
+	<script>
+	</script>
+
+</html>
