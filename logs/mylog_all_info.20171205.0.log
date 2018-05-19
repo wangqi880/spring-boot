@@ -1,0 +1,351 @@
+2017-12-05 00:29:22,557 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 11920 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:29:22,569 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:29:22,861 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66d25520: startup date [Tue Dec 05 00:29:22 CST 2017]; root of context hierarchy
+ 2017-12-05 00:31:03,442 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 18252 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:31:03,448 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:31:03,762 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35a38f98: startup date [Tue Dec 05 00:31:03 CST 2017]; root of context hierarchy
+ 2017-12-05 00:31:05,100 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fc6cc98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:31:05,139 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:31:06,209 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:31:06,222 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:31:06,224 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:31:06,329 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:31:06,329 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2567 ms
+ 2017-12-05 00:31:06,581 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:31:06,583 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:31:06,587 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:31:06,588 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:31:06,588 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:31:06,588 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:31:07,631 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35a38f98: startup date [Tue Dec 05 00:31:03 CST 2017]; root of context hierarchy
+ 2017-12-05 00:31:07,702 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:31:07,704 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.AdminController.huiadmin()
+ 2017-12-05 00:31:07,704 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:31:07,708 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:31:07,708 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:31:07,709 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:31:07,709 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:31:07,710 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:31:07,711 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:31:07,713 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:31:07,714 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:31:07,758 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:31:07,758 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:31:07,800 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:31:07,848 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:31:08,641 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:31:08,711 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:31:08,733 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:31:08,794 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:31:08,803 INFO SprngBootApplication || ||Started SprngBootApplication in 5.795 seconds (JVM running for 6.837)
+ 2017-12-05 00:31:12,614 INFO [/] || ||Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2017-12-05 00:31:12,615 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization started
+ 2017-12-05 00:31:12,649 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+ 2017-12-05 00:32:24,677 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 11536 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:32:24,680 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:32:25,135 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f844f7: startup date [Tue Dec 05 00:32:25 CST 2017]; root of context hierarchy
+ 2017-12-05 00:32:26,474 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5d611961] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:32:26,514 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:32:27,599 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:32:27,610 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:32:27,613 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:32:27,718 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:32:27,718 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2583 ms
+ 2017-12-05 00:32:27,956 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:32:27,958 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:32:27,962 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:32:27,963 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:32:27,964 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:32:27,964 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:32:28,942 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52f844f7: startup date [Tue Dec 05 00:32:25 CST 2017]; root of context hierarchy
+ 2017-12-05 00:32:29,016 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:32:29,018 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.AdminController.huiadmin()
+ 2017-12-05 00:32:29,019 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:32:29,022 WARN AnnotationConfigEmbeddedWebApplicationContext || ||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'huiAdminController' method 
+public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+to {[/huiadmin]}: There is already 'adminController' bean method
+public java.lang.String com.j.controller.AdminController.huiadmin() mapped.
+ 2017-12-05 00:32:29,025 INFO StandardService || ||Stopping service [Tomcat]
+ 2017-12-05 00:32:29,081 INFO AutoConfigurationReportLoggingInitializer || ||
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+ 2017-12-05 00:32:29,094 ERROR SpringApplication || ||Application startup failed
+ 2017-12-05 00:32:52,475 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 3368 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:32:52,479 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:32:52,769 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59a74f1f: startup date [Tue Dec 05 00:32:52 CST 2017]; root of context hierarchy
+ 2017-12-05 00:32:54,187 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6bf16772] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:32:54,227 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:32:55,389 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:32:55,405 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:32:55,407 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:32:55,518 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:32:55,518 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2749 ms
+ 2017-12-05 00:32:55,808 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:32:55,810 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:32:55,815 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:32:55,816 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:32:55,816 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:32:55,816 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:32:56,882 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59a74f1f: startup date [Tue Dec 05 00:32:52 CST 2017]; root of context hierarchy
+ 2017-12-05 00:32:56,956 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:32:56,958 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:32:56,959 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+ 2017-12-05 00:32:56,963 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:32:56,964 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:32:56,964 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:32:56,965 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:32:56,966 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:32:56,967 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:32:56,970 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:32:56,971 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:32:57,017 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:32:57,017 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:32:57,059 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:32:57,105 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:32:57,691 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:32:57,746 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:32:57,763 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:32:57,817 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:32:57,822 INFO SprngBootApplication || ||Started SprngBootApplication in 5.714 seconds (JVM running for 6.502)
+ 2017-12-05 00:33:11,770 INFO [/] || ||Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2017-12-05 00:33:11,771 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization started
+ 2017-12-05 00:33:11,807 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+ 2017-12-05 00:33:42,957 INFO Cookie || ||A cookie header was received [1490836825,1491808156,1493198604; UM_distinctid=15f0a7a93f94e6-005be7e370da44-5c4f231c-144000-15f0a7a93fa3fc; CNZZDATA1252987997=1894277099-1507709315-%7C1507881696; lastvisit=1508815733251; CNZZDATA30088308=cnzz_eid%3D604952258-1512114466-http%253A%252F%252Flocalhost%253A8080%252F%26ntime%3D1512114466; Huiskin=default; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512400139; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1512400803] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+ 2017-12-05 00:35:09,845 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 5792 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:35:09,848 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:35:10,135 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65a86ba: startup date [Tue Dec 05 00:35:10 CST 2017]; root of context hierarchy
+ 2017-12-05 00:35:11,502 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b6923a60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:35:11,543 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:35:12,653 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:35:12,670 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:35:12,672 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:35:12,782 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:35:12,782 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2647 ms
+ 2017-12-05 00:35:13,064 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:35:13,066 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:35:13,070 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:35:13,071 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:35:13,072 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:35:13,072 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:35:14,350 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65a86ba: startup date [Tue Dec 05 00:35:10 CST 2017]; root of context hierarchy
+ 2017-12-05 00:35:14,445 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:35:14,448 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:35:14,449 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+ 2017-12-05 00:35:14,452 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:35:14,453 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:35:14,453 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:35:14,454 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:35:14,455 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:35:14,456 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:35:14,461 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:35:14,462 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:35:14,518 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:35:14,519 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:35:14,578 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:35:14,638 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:35:15,428 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:35:15,493 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:35:15,519 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:35:15,585 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:35:15,590 INFO SprngBootApplication || ||Started SprngBootApplication in 6.154 seconds (JVM running for 7.096)
+ 2017-12-05 00:35:31,960 INFO [/] || ||Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2017-12-05 00:35:31,961 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization started
+ 2017-12-05 00:35:31,991 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+ 2017-12-05 00:39:41,263 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 13372 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:39:41,269 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:39:41,677 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65a86ba: startup date [Tue Dec 05 00:39:41 CST 2017]; root of context hierarchy
+ 2017-12-05 00:39:43,054 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$73d6d584] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:39:43,090 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:39:44,331 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:39:44,349 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:39:44,351 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:39:44,483 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:39:44,483 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2806 ms
+ 2017-12-05 00:39:44,787 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:39:44,789 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:39:44,795 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:39:44,795 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:39:44,796 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:39:44,796 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:39:45,910 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65a86ba: startup date [Tue Dec 05 00:39:41 CST 2017]; root of context hierarchy
+ 2017-12-05 00:39:45,980 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:39:45,983 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:39:45,984 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+ 2017-12-05 00:39:45,987 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:39:45,988 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:39:45,988 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:39:45,989 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:39:45,990 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:39:45,990 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:39:45,992 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:39:45,993 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:39:46,043 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:39:46,043 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:39:46,090 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:39:46,135 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:39:46,811 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:39:46,874 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:39:46,893 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:39:46,952 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:39:46,962 INFO SprngBootApplication || ||Started SprngBootApplication in 6.124 seconds (JVM running for 7.112)
+ 2017-12-05 00:39:47,949 INFO [/] || ||Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2017-12-05 00:39:47,951 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization started
+ 2017-12-05 00:39:47,990 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+ 2017-12-05 00:44:35,430 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 2904 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:44:35,434 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:44:35,791 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35a38f98: startup date [Tue Dec 05 00:44:35 CST 2017]; root of context hierarchy
+ 2017-12-05 00:44:37,297 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$553758ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:44:37,333 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:44:38,647 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:44:38,664 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:44:38,667 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:44:38,790 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:44:38,791 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 3001 ms
+ 2017-12-05 00:44:39,074 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:44:39,077 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:44:39,081 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:44:39,081 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:44:39,082 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:44:39,082 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:44:40,201 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35a38f98: startup date [Tue Dec 05 00:44:35 CST 2017]; root of context hierarchy
+ 2017-12-05 00:44:40,276 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:44:40,278 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:44:40,279 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+ 2017-12-05 00:44:40,283 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:44:40,283 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:44:40,283 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:44:40,284 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:44:40,285 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:44:40,286 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:44:40,288 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:44:40,289 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:44:40,335 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:44:40,336 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:44:40,386 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:44:40,438 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:44:41,110 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:44:41,172 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:44:41,194 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:44:41,255 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:44:41,261 INFO SprngBootApplication || ||Started SprngBootApplication in 6.337 seconds (JVM running for 7.366)
+ 2017-12-05 00:44:43,733 INFO [/] || ||Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2017-12-05 00:44:43,734 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization started
+ 2017-12-05 00:44:43,772 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+ 2017-12-05 00:46:08,523 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 12196 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:46:08,530 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:46:08,880 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65a86ba: startup date [Tue Dec 05 00:46:08 CST 2017]; root of context hierarchy
+ 2017-12-05 00:46:10,225 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$73d6d584] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:46:10,265 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:46:11,409 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:46:11,422 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:46:11,424 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:46:11,529 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:46:11,530 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2650 ms
+ 2017-12-05 00:46:11,790 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:46:11,791 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:46:11,796 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:46:11,797 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:46:11,797 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:46:11,797 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:46:12,886 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65a86ba: startup date [Tue Dec 05 00:46:08 CST 2017]; root of context hierarchy
+ 2017-12-05 00:46:12,960 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:46:12,962 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:46:12,963 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+ 2017-12-05 00:46:12,967 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:46:12,967 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:46:12,968 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:46:12,968 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:46:12,969 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:46:12,970 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:46:12,972 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:46:12,973 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:46:13,015 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:46:13,016 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:46:13,059 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:46:13,101 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:46:13,821 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:46:13,888 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:46:13,908 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:46:13,967 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:46:13,973 INFO SprngBootApplication || ||Started SprngBootApplication in 5.855 seconds (JVM running for 6.789)
+ 2017-12-05 00:46:19,487 INFO [/] || ||Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2017-12-05 00:46:19,489 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization started
+ 2017-12-05 00:46:19,520 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+ 2017-12-05 00:49:04,583 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 8752 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:49:04,589 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:49:04,923 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fca5ccc: startup date [Tue Dec 05 00:49:04 CST 2017]; root of context hierarchy
+ 2017-12-05 00:49:06,268 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$966cd8a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:49:06,307 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:49:07,501 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:49:07,514 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:49:07,516 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:49:07,625 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:49:07,625 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2702 ms
+ 2017-12-05 00:49:07,916 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:49:07,918 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:49:07,923 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:49:07,924 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:49:07,924 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:49:07,924 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:49:09,059 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fca5ccc: startup date [Tue Dec 05 00:49:04 CST 2017]; root of context hierarchy
+ 2017-12-05 00:49:09,130 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:49:09,133 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:49:09,134 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+ 2017-12-05 00:49:09,139 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:49:09,140 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:49:09,140 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:49:09,141 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:49:09,143 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:49:09,144 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:49:09,146 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:49:09,147 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:49:09,190 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:49:09,191 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:49:09,239 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:49:09,300 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:49:10,029 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:49:10,093 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:49:10,115 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:49:10,181 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:49:10,188 INFO SprngBootApplication || ||Started SprngBootApplication in 6.008 seconds (JVM running for 6.951)
+ 2017-12-05 00:50:06,158 INFO SprngBootApplication || ||Starting SprngBootApplication on AFOGP-608050718 with PID 8936 (D:\springcloudwork\spring-boot\target\classes started by Administrator in D:\springcloudwork\spring-boot)
+ 2017-12-05 00:50:06,162 INFO SprngBootApplication || ||No active profile set, falling back to default profiles: default
+ 2017-12-05 00:50:06,437 INFO AnnotationConfigEmbeddedWebApplicationContext || ||Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@21c2d04: startup date [Tue Dec 05 00:50:06 CST 2017]; root of context hierarchy
+ 2017-12-05 00:50:07,693 INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker || ||Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$583f1fb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-12-05 00:50:07,733 INFO AnnotationActionEndpointMapping || ||Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+ 2017-12-05 00:50:08,845 INFO TomcatEmbeddedServletContainer || ||Tomcat initialized with port(s): 8080 (http)
+ 2017-12-05 00:50:08,859 INFO StandardService || ||Starting service [Tomcat]
+ 2017-12-05 00:50:08,862 INFO StandardEngine || ||Starting Servlet Engine: Apache Tomcat/8.5.23
+ 2017-12-05 00:50:08,959 INFO [/] || ||Initializing Spring embedded WebApplicationContext
+ 2017-12-05 00:50:08,960 INFO ContextLoader || ||Root WebApplicationContext: initialization completed in 2523 ms
+ 2017-12-05 00:50:09,200 INFO ServletRegistrationBean || ||Mapping servlet: 'dispatcherServlet' to [/]
+ 2017-12-05 00:50:09,202 INFO ServletRegistrationBean || ||Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+ 2017-12-05 00:50:09,208 INFO FilterRegistrationBean || ||Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2017-12-05 00:50:09,209 INFO FilterRegistrationBean || ||Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2017-12-05 00:50:09,210 INFO FilterRegistrationBean || ||Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2017-12-05 00:50:09,210 INFO FilterRegistrationBean || ||Mapping filter: 'requestContextFilter' to: [/*]
+ 2017-12-05 00:50:10,255 INFO RequestMappingHandlerAdapter || ||Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@21c2d04: startup date [Tue Dec 05 00:50:06 CST 2017]; root of context hierarchy
+ 2017-12-05 00:50:10,335 INFO RequestMappingHandlerMapping || ||Mapped "{[/admin]}" onto public java.lang.String com.j.controller.AdminController.index(org.springframework.ui.Model,javax.servlet.http.HttpSession)
+ 2017-12-05 00:50:10,337 INFO RequestMappingHandlerMapping || ||Mapped "{[/cron]}" onto public java.lang.Object com.j.controller.CronController.setCron(java.lang.String)
+ 2017-12-05 00:50:10,338 INFO RequestMappingHandlerMapping || ||Mapped "{[/huiadmin]}" onto public java.lang.String com.j.controller.huiController.HuiAdminController.huiadmin()
+ 2017-12-05 00:50:10,341 INFO RequestMappingHandlerMapping || ||Mapped "{[/index]}" onto public java.lang.String com.j.controller.IndexController.index()
+ 2017-12-05 00:50:10,342 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/get]}" onto public java.lang.Object com.j.controller.IndexController.get(com.j.model.UserRequest,org.springframework.validation.BindingResult)
+ 2017-12-05 00:50:10,342 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/getInfo/{username}]}" onto public com.j.model.User com.j.controller.IndexController.getUser(java.lang.String)
+ 2017-12-05 00:50:10,343 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/alluser]}" onto public java.lang.Object com.j.controller.IndexController.alluser()
+ 2017-12-05 00:50:10,344 INFO RequestMappingHandlerMapping || ||Mapped "{[/index/userinfo/{id}]}" onto public java.lang.Object com.j.controller.IndexController.userinfo(java.lang.String)
+ 2017-12-05 00:50:10,344 INFO RequestMappingHandlerMapping || ||Mapped "{[/login]}" onto public java.lang.String com.j.controller.LogingController.login()
+ 2017-12-05 00:50:10,347 INFO RequestMappingHandlerMapping || ||Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2017-12-05 00:50:10,348 INFO RequestMappingHandlerMapping || ||Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2017-12-05 00:50:10,389 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:50:10,390 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:50:10,440 INFO SimpleUrlHandlerMapping || ||Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2017-12-05 00:50:10,502 WARN TemplateMode || ||[THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+ 2017-12-05 00:50:11,203 INFO OptionalLiveReloadServer || ||LiveReload server is running on port 35729
+ 2017-12-05 00:50:11,260 INFO AnnotationMBeanExporter || ||Registering beans for JMX exposure on startup
+ 2017-12-05 00:50:11,277 INFO ScheduledAnnotationBeanPostProcessor || ||No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2017-12-05 00:50:11,333 INFO TomcatEmbeddedServletContainer || ||Tomcat started on port(s): 8080 (http)
+ 2017-12-05 00:50:11,339 INFO SprngBootApplication || ||Started SprngBootApplication in 5.57 seconds (JVM running for 6.525)
+ 2017-12-05 00:50:14,301 INFO [/] || ||Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2017-12-05 00:50:14,302 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization started
+ 2017-12-05 00:50:14,337 INFO DispatcherServlet || ||FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+ 
