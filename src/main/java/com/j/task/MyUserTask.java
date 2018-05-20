@@ -15,7 +15,7 @@ public class MyUserTask extends DynamicScheduledTask {
 
     @Override
     public void doBiz() {
-        List<User> list =  userService.queryByall();
-      System.out.println(list.toString());
+       /* List<User> list =  userService.queryByall();
+      System.out.println(list.toString());*/
     }
 }

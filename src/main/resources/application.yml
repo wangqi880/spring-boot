@@ -39,6 +39,13 @@ spring:
             enabled: true
             max-interval: 50000
             max-attempts: 10
+  devtools:
+    remote: #远程调试 org.springframework.boot.devtools.RemoteSpringApplication
+      secret: wq
+ #actuator使用,lei
+management:
+  security:
+    enabled: false
 
 #cron:
 #  pattern: 0/15 * * * * ?
