@@ -1,11 +1,15 @@
 package com.j;
 
+import com.alibaba.fastjson.JSONObject;
+import com.j.mapper.UserMapper;
+import com.j.model.User;
 import com.j.model.mongodb.MongUser;
 import com.j.model.mongodb.QMongUser;
 import com.j.mongrepository.RepositoryUtils;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -22,6 +26,9 @@ import java.util.List;
 @SpringBootTest
 public class mongodbMongMongUserRepositoryTest {
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
+    @Autowired
+    UserMapper userMapper;
     @Test
     public void test1(){
        /* MongUser u  = new MongUser();
@@ -55,6 +62,12 @@ public class mongodbMongMongUserRepositoryTest {
         Pageable pageable3 = new PageRequest(0,2,sort);
         Page<MongUser> page2 = RepositoryUtils.findAll(booleanExpression, pageable3, MongUser.class);
         System.out.println("333");
+    }
+
+    @Test
+    public void test(){
+        List<User> users = userMapper.queryByall();
+        System.out.println(JSONObject.toJSONString(users));
     }
 
 }
