@@ -2,10 +2,7 @@ package com.j;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
@@ -15,15 +12,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class RedisTest {
 
-    @Autowired
+   /* @Autowired
     RedisTemplate redisTemplate;
     @Autowired
     StringRedisTemplate stringRedisTemplate;
-
+*/
     @Test
     public void test(){
-        stringRedisTemplate.opsForValue().set("name","wq");
+       /* stringRedisTemplate.opsForValue().set("name","wq");
         String name = stringRedisTemplate.opsForValue().get("name");
-        System.out.println(name);
+        System.out.println(name);*/
     }
 }

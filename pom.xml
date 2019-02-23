@@ -150,27 +150,27 @@
 			<version>3.2.2</version>
 		</dependency>
 		<!--集成RabbitMQ-->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 			<version>1.3.3.RELEASE</version>
 
-		</dependency>
+		</dependency>-->
 		<!-- 引入actuator查询应用信息 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<!-- 引入redis-->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
+		</dependency>-->
 		<!-- redis作为session来使用，共享session缓存 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.session</groupId>
 			<artifactId>spring-session-data-redis</artifactId>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<build>

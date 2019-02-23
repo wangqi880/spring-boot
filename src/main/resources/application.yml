@@ -9,7 +9,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: root
+    password: wangqi
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
@@ -24,34 +24,34 @@ spring:
       database: test
       port: 17017
       host: 10.25.245.121
-  rabbitmq:
-      host: 10.25.245.121
-      port: 8088
-      username: guest
-      password: guest
-      virtual-host: /wq
-      listener:
-        simple:
-          concurrency: 30
-          max-concurrency: 100
-          retry:
-            initial-interval: 2000
-            enabled: true
-            max-interval: 50000
-            max-attempts: 10
+#  rabbitmq:
+#      host: 10.25.246.53
+#      port: 5672
+#      username: guest
+#      password: guest
+#      virtual-host: /wq
+#      listener:
+#        simple:
+#          concurrency: 30
+#          max-concurrency: 100
+#          retry:
+#            initial-interval: 2000
+#            enabled: true
+#            max-interval: 50000
+#            max-attempts: 10
   devtools:
     remote: #远程调试 org.springframework.boot.devtools.RemoteSpringApplication
       secret: wq
-  redis:   #配置redis
-    database: 0
-    pool:
-      max-idle: 8
-      min-idle: 0
-      max-active: 50
-      max-wait: 20
-    sentinel:
-      nodes: 10.25.245.121:17379,10.25.245.121:17380,10.25.245.121:17381
-      master: redis-masterslave
+#  redis:   #配置redis
+#    database: 0
+#    pool:
+#      max-idle: 8
+#      min-idle: 0
+#      max-active: 50
+#      max-wait: 20
+#    sentinel:
+#      nodes: 10.25.245.121:17379,10.25.245.121:17380,10.25.245.121:17381
+#      master: redis-masterslave
 
 
  #actuator使用,lei

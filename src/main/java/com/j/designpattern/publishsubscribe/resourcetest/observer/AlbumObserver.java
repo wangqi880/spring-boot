@@ -1,6 +1,7 @@
 package com.j.designpattern.publishsubscribe.resourcetest.observer;
 
 import com.j.designpattern.publishsubscribe.resourcetest.model.Album;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import org.springframework.stereotype.Service;
 
 import java.util.Observable;

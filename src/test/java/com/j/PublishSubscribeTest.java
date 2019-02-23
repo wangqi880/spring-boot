@@ -22,8 +22,9 @@ public class PublishSubscribeTest {
     AlbumObservable albumObservable;
     @Test
     public void test1(){
-
-        publishSubscribeControlCentre.notifyObservers(albumObservable,new Album());
+        Album a = new Album();
+        a.setName("我是biang的专辑");
+        publishSubscribeControlCentre.notifyObservers(albumObservable,a);
     }
 
 
