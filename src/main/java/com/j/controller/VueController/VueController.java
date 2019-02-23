@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
  */
 @Controller
 public class VueController {
-    @RequestMapping("/vue/index")
+    @RequestMapping("/static/vue/index")
     public String   index(Model model, HttpSession session){
         return  "vue/index";
     }

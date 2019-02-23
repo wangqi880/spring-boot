@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+</head>
+<body>
+    <!-- 挂载点 模板，实列-->>
+    <div id="root">
+       <div v-on:click="haha" v-bind:title="title">{{message}}</div>
+        <input v-model="content"/>
+        <div>{{content}}</div>
+        <input v-model="firstName">
+        <input v-model="lastName">
+        <div>{{fullName}}</div>
+        <div>{{count}}</div>
+        <div v-if="show"> 我能消失</div>
+        <div v-show="show">我也能消失</div>
+        <button @click="canShow">显示或者消失</button>
+        <ul>
+            <li v-for="item of list">
+                {{item}}
+            </li>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+            el: "#root",
+            data: {
+                message: "world!",
+                title: "my title",
+                content: "my content",
+                firstName: "",
+                lastName: "",
+                count:0,
+                show: true,
+                list: [1,2,3,4]
+            },
+            methods: {
+                haha: function () {
+                    this.message="asdasdasd"
+                },
+                canShow: function(){
+                    this.show=!this.show
+                }
+            },
+            computed:{
+                fullName: function () {
+                    return this.firstName+" "+this.lastName
+                }
+            },
+            watch:{
+                firstName:function () {
+                    this.count++
+                },
+                lastName:function () {
+                    this.count++
+                },
+                fullName:function () {
+                    this.count++
+                }
+            }
+        })
+    </script>
+</body>
+</html>
